@@ -148,13 +148,13 @@
 </head>
 <body>
 
-    <h1>拼音填字遊戲</h1>
-    <div class="sub-text">請根據提示輸入拼音 (不含聲調)</div>
+    <h1>拼音填字游戏</h1>
+    <div class="sub-text">请根据提示输入拼音 (不含声调)</div>
 
     <div class="game-wrapper">
         <div class="clues-container">
             <div class="clue-section">
-                <h3>➡ 橫向 (Across)</h3>
+                <h3>➡ 横向 (Across)</h3>
                 <ul id="across-list"></ul>
             </div>
             <div class="clue-section">
@@ -167,8 +167,8 @@
     </div>
 
     <div class="controls">
-        <button class="btn-check" onclick="checkAnswers()">檢查答案</button>
-        <button class="btn-reveal" onclick="revealAnswers()">顯示解答</button>
+        <button class="btn-check" onclick="checkAnswers()">检查答案</button>
+        <button class="btn-reveal" onclick="revealAnswers()">显示解答</button>
         <button class="btn-retry" onclick="initGame()">重新生成</button>
     </div>
 
@@ -402,12 +402,12 @@
             });
 
             if (correctCount === inputs.length && inputs.length > 0) {
-                setTimeout(() => alert("太棒了！拼音全對！🎉"), 100);
+                setTimeout(() => alert("太棒了！拼音全对！🎉"), 100);
             }
         }
 
         function revealAnswers() {
-            if(!confirm("確定要偷看所有答案嗎？")) return;
+            if(!confirm("确定要偷看所有答案吗？")) return;
             let inputs = document.querySelectorAll('.cell input');
             inputs.forEach(input => {
                 input.value = input.dataset.answer;
